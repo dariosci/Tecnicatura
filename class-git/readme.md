@@ -171,3 +171,4 @@ cd .. #vamos a la carpeta de usuario
 ```
 Revisar y ejecutar cada comando, hacerlo como practica
 Profesor Ariel Betancud
+
