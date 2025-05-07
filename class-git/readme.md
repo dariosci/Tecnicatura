@@ -1,5 +1,5 @@
-#**CLASE 1 MIÉRCOLES 9 DE ABRIL DEL 2025**
-<br>*Lo que vimos en la clase anterior:*</br>
+# CLASE 1 MIÉRCOLES 9 DE ABRIL DEL 2025
+<br>*Lo que vimos en la clase anterior:*
 
 Abrimos la terminal de Git Bash en Windows o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 - pwd  #Vemos la ruta de la carpeta en la que estamos
@@ -18,7 +18,7 @@ Abrimos la terminal de Git Bash en Windows o la terminal de Ubuntu, tambien la t
 - df -h #Muestra todos los directorios en Ubuntu
 - cd /mnt/d #Cambia de directorio usando WSL Ubuntu en window
 
-AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
+## AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 - cd ..
 - cd ..
 - cd /mnt/c
@@ -28,10 +28,9 @@ AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 - mkdir Python
 - mkdir Java
 - mkdir JavaScript
-- Revisar y ejecutar cada comando, hacerlo como practica
+- Revisar y ejecutar cada comando, hacerlo como practica</br>
 
-
-**#CLASE 2 MIÉRCOLES 16 DE ABRIL DEL 2025**
+# CLASE 2 MIÉRCOLES 16 DE ABRIL DEL 2025
 
 Abrir git bash en Windows o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador
 
@@ -45,15 +44,15 @@ Abrir git bash en Windows o la terminal de Linux o de Mac: al abrir Git Bash hac
 - rm vacio.txt #Borra el archivo seleccionado, ¡¡¡¡CUIDADO!!!!
 - rm --help #Muestra como funciona el comando
 
-<br>CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT</br>
+## CREAR UN REPOSITORIO DE GIT Y HAZ TU PRIMER COMMIT
 
 - cd tecnicatura
 - mkdir class-git
 - cd class-git #Entramos en la carpeta que necesitamos trabajar
 - git init #Creamos un repositorio en la carpeta central, se crea el archivo .git
 - code .  #Abrimos VSC, el punto hace que se abra el archivo en el que estamos situados
-- ctrl + n #Creamos un archivo nuevo y escribimos en el, como lo hicimos antes
-- ctrl + s #Guardamos poniendo el nombre: historia.txt
+    - ctrl + n #Creamos un archivo nuevo y escribimos en el, como lo hicimos antes
+    - ctrl + s #Guardamos poniendo el nombre: historia.txt
 - git status #Vemos el estado del proyecto en tiempo real, esta en el área de trabajo
 - git add historia.txt #Enviamos el archivo al área de preparación
 - git status #Para ver el estado de cambios
@@ -72,3 +71,79 @@ Abrir git bash en Windows o la terminal de Linux o de Mac: al abrir Git Bash hac
 - git commit -m "Mi segundo commit"
 - git log historia.txt #Vemos toda la historia de este archivo, el número largo es el hash del commit
 - Revisar y ejecutar cada comando, hacerlo como practica
+
+# CLASE 3 MIÉRCOLES 23 DE ABRIL DEL 2025
+
+*Analizar cambios en los archivos de tu proyecto Git parte 3*
+
+Ingresamos de la siguiente manera:
+Abrir git bash en Windows o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+
+- cd tecnicaturagit #Ingresamos al direcotorio donde están nuestras carpetas de trabajo
+- ls #Vemos los archivos y directorios que ya tenemos
+- cd git #No hay nada
+- cd .. #Salimos
+- rm historia.txt #Eliminamos el archivo que habíamos hecho, esto en git bash (window) esto es para practica
+- rm Git #rm: cannot remove 'Git': Is a directory
+- rm --recursive -R Git #By default, rm does not remove directories.  Use the --recursive (-r or -R) arguments
+- option to remove each listed directory, too, along with all of its contents. Esto es para practica
+- rm --help #Nos muestra lo que les puse arriba como documentación en Inglés.
+- mkdir class-git #Creamos la carpeta o directorio para trabajar en Git local por ahora.
+- cd class-git #Entramos para crear el README.md para este sector.
+- touch README.md #Vamos a crear un archivo nuevo, md significa markdown y se pueden trabajar con editores de texto, este es un lenguaje que transforma el texto a html.
+
+>[!NOTE]
+>Enlace a la documentación en GitHub de [MARKDOWN](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+- Leemos la documentación para ir creando en README.md como lo enseña GitHub.
+- code . #Abrimos VSC para editar el archivo.
+- Empezamos a cargar lo visto en las clases anteriores (Comandos) en el README y pasamos a commitear
+- git status
+- git add .
+- git status
+- git commit -m "Cargamos el README dentro del directorio class-git"
+- git status
+- git log #Para ver los dos commits hechos: Si tienes commiteada alguna clase anterior veras mas commits de los que yo tengo.
+- cd ..
+- cd ..
+- Revisar y ejecutar cada comando, hacerlo como practica
+
+# CLASE 4 MIÉRCOLES 30 DE ABRIL DEL 2025
+*Analizar cambios en los archivos de tu proyecto Git parte 4*
+
+Ingresamos de la siguiente manera:
+Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hacerlo como administrador, en terminal también o usar sudo para permisos especiales.
+
+## TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
+- cd tecnicatura 
+- cd class-git
+- ls
+- touch historia.txt
+- code . 
+    - #Modificamos el archivo historia.txt colocando lo siguiente: Bienvenido mi nombre es Ariel (coloca tu nombre)
+    - ctrl + s
+- git status
+- git add .
+- git status
+- git commit #Sin agregar -m veremos que pasa 
+    - #Agregar mensaje
+    - Salir con Esc #Presionamos Escape 
+    - :wq! + enter #Y ya salimos si estamos en git bash con windows
+    - Esc + shift + z + z #Salimos del mensaje para el commit, en linux, esto anda en algunas terminales
+- #Agregamos otra línea de mensaje en historia.txt desde VSC: estoy estudiando programación
+    - ctrl + s
+    - git add .
+    - git commit
+- #Se abre un editor de código basado en línea de comandos, editor de texto como VSC llamado vim
+    - Esc + i #Para comenzar a escribir mensaje del commit, no suele ser necesario
+    - ctrl + x #Para salir en linux
+    - s + enter #Para decir si al cambio y aceptar el nombre, ósea no cambiamos el nombre, la (s) es de si y la (y) es de yes, no olvidar enter en linux
+    - git show #Vemos todos los cambios en el último commit
+    - git log historia.txt #Vemos todos los commit
+    - q #Para salir del registro de commits
+- #Copiamos un hash mas antoguo y otro reciente, ingresamos el siguiente comando
+    - git diff hash_commit_numerico hash_commit_numerico #Comparamos diferentes commits y sus cambios, poner la versión mas vieja primero, luego la mas nueva
+    - q #Para salir
+    - cd ..
+    - cd ..
+
