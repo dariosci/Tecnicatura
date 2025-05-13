@@ -11,6 +11,3 @@ print(id(x))
 # Las literales se escriben x240, la variable y = x984, la variable z = x304
 print(id(y))
 print(id(z))
-
-print(|x|) # Imprime el valor absoluto de x
-print(x + y) # Suma
