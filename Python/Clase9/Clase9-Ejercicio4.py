@@ -1,6 +1,8 @@
+# Clase 9 - Ejercicios
+# Ejercicio 4: Calificaciones de Alumnos
 # Suponga que se tiene un conjunto de calificaciones de un grupo de 10 alumnos. 
 # Realizar un algoritmo para calcular la calificación promedio y la calificación más baja de todo el grupo
-# Ejercicio 4:
+
 total = 0
 menor = 99
 for i in range(1, 11):
