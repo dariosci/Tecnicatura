@@ -22,3 +22,28 @@ else:
     numTexto = "Has ingresado un número fuera de rango"
 print(f"El número ingresado es: {num} - {numTexto}")
 '''
+
+'''
+Ejercicio 1:
+Debemos plasmar la expresi´n en una expresión algorítmica, o sea
+hacerlo en código
+
+
+a = float(input("Ingrese un número(a): "))
+b = float(input("Ingrese un número(b): "))
+c = float(input("Ingrese un número(c): "))
+
+resultado = (a ** 3 * (b ** 2 - 2 * a * c)) / (2 * b)
+
+print(f"El resultado de la operación es: {resultado}")
+'''
+
+condicion = False
+# 
+# if condicion:
+#     print("Condicion Verdadera")
+# else:
+#     print("Condicion Falsa")
+
+# SIMPLIFICADA
+print("Condicion Verdadera" if condicion else "Condicion Falsa")
