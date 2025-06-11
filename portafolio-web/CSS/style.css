@@ -1,8 +1,30 @@
+/* Definiendo variables de color en css */
+:root {
+  --body-bg-color: rgb(43, 43, 70);
+  --text-color: white;
+  --colorh1-color: rgb(215, 211, 211);
+}
+/* Aplicando variable creada en el root de nuestra web */
+/* Reemplazee el body con el uso de variables css */
+/* Aplicando variable creada en el root de nuestra web */
+/* Reemplazee el body con el uso de variables css */
+body {
+  background-color: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+  color: var(--colorh1-color)
+}
+
+/*
 body {
   color: white;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: rgb(43, 70, 70);
 }
+*/
+
 /* Titulo del header */
 .titulo {
   text-align: center;
@@ -47,7 +69,29 @@ a {
   margin-top: 5rem; /* margen a lo alto */
   line-height: 2.5rem; /* espaciado entre los parrafos */
   font-size: large; /* tamaño de la fuente */
-  color: azure
+  color: azure;
+  gap: 5rem;
+  align-items: center;
+}
+
+.img-perfil {
+  border-radius: 50%;
+}
+
+.experiencia, .estudios {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: azure;
+}
+
+.container-experiencia, .container-estudios {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 5rem;
+  line-height: 2.5rem;
+  font-size: large;
+  margin: 8rem;
 }
 
 /* Media Queries agrupadas */
@@ -68,6 +112,18 @@ a {
     margin-top: 1rem; /* margen a lo alto */
     line-height: 2.5rem; /* espaciado entre los parrafos del texto */
     font-size: small;
+    flex-direction: column;
+  }
+  /* Agregando el responsivo para las secciones de experiencia y estudios */
+  .container-experiencia, .container-estudios {
+    width: 100%;
+    margin: 0rem;
+  }
+  .experiencia, .estudios {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: small;
   }
 }
 
@@ -80,6 +136,10 @@ a {
     gap: 2rem;
     justify-content: center;
   }
+  /* Agregando el responsivo para las secciones de experiencia y estudios */
+  .experiencia, .estudios {
+    width: 75%;
+  }
 }
 
 /* Escritorio (Pantallas anchas, a partir de 1024px) */
@@ -91,5 +151,9 @@ a {
     gap: 3rem;
     justify-content: flex-end;
     margin: 0 3rem;    
+  }
+  /* Agregando el responsivo para las secciones de experiencia y estudios */
+  .experiencia, .estudios {
+    width: 75%;
   }
 }
