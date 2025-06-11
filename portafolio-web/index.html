@@ -10,8 +10,11 @@
     <meta name="description" content="Portafolio web de Dario Scilipoti, integrante del Grupo Lobo">
     <meta name="keywords" content="portafolio, desarrollador web, [programador], Dario Scilipoti, Grupo Lobo">
     <meta name="author" content="Dario Scilipoti">
-    <title>Portafolio web</title>
+    <title>Dario Scilipoti</title>
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/sobremi.css">
+    <link rel="stylesheet" href="./CSS/estudios.css">
+    <link rel="stylesheet" href="./CSS/experiencia.css">    
 </head>
 <body>
     <header>
@@ -27,7 +30,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-container">
         <section class="sobremi">
             <article class="container-sobremi">
                 <img src="./Assets/perfil.jpg" alt="Foto de perfil de Dario Scilipoti" class="img-perfil" width="200" height="200">
@@ -39,21 +42,32 @@
         <section class="experiencia" id="experiencia">
             <article class="container-experiencia">
                 <h2>Experiencia Laboral</h2>
-                <h3>Hospital Grl. Las Heras - Tupungato</h3>
+                <h3><a href="https://hospitalgrallesheras.com.ar/" target="_blank">Hospital Grl. Las Heras - Tupungato</a></h3>
                 <h4>Marzo 2018-Presente - Servicio de Computos: Analista Mayor</h4>
-                    <a href="https://hospitalgrallesheras.com.ar/" target="_blank">Sitio web</a>
+                    
                 </h4>
-                <h3>Scilitec</h3>
-                <h4>Abril 2017-Presente - Emprendimiento Propio</h4>
-                    <a href="https://www.facebook.com/scilitec" target="_blank">Página Facebook</a>
+                <h3><a href="https://www.facebook.com/scilitec" target="_blank">Scilitec</a></h3>
+                <h4>Abril 2017-Presente - Emprendimiento Propio</h4>                    
                 <p>Servicio Técnico Informático a Empresas, Sistemas Operativos, Antivirus, Redes, Smartphones, Camaras de seguridad.</p>
-
             </article>
         </section>
         <section class="estudios" id="estudios">
             <article class="container-estudios">
                 <h2>Mis estudios</h2>
-                <p>He completado cursos de desarrollo web y programación, incluyendo HTML, CSS y JavaScript.</p>
+                <h6>1996 - 2000</h6>
+                    <div class="container-estudios-section">
+                        <h4>Secundario Completo, Escuela D. F. Sarmiento Nº 4-079, Titulo: Bachiller con Orientación Docente</h4>
+                    </div>
+                <h6>2002 - 2005</h6>
+                    <div class="container-estudios-section">
+                        <img src="./Assets/logo-aconcagua.png" width="130" height="100" alt="Logo Universidad del Aconcagua" class="logo-ua">
+                        <h4>lng. en Software, Universidad del Aconcagua. 3º año cursado.</h4>
+                    </div>
+                <h6>2025</h6>
+                    <div class="container-estudios-section">
+                        <img src="./Assets/logo-utn.png" width="200" height="100" alt="Logo UTN San Rafael" class="logo-utn">
+                        <h4>Tecnicatura Universitaria en Programación, UTN San Rafael</h4>
+                    </div>  
             </article>
     </main>
 </body>
