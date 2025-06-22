@@ -1,7 +1,7 @@
 '''
 Ejercicio 3: 
 Pedir al usuario que ingrese un mes del año, el valor debe ser un número del 1 al 12, luego le decimos en que estacion del año está
-Venaro -> del 21/12 al 21/03 -> 1, 2, 3
+Verano -> del 21/12 al 21/03 -> 1, 2, 3
 Otoño -> del 21/03 al 21/06 -> 4, 5, 6
 Invierno -> del 21/06 al 21/09 -> 7, 8, 9
 Primavera -> del 21/09 al 21/12 -> 10, 11, 12
