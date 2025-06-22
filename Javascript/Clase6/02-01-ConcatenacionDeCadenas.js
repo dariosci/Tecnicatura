@@ -1,3 +1,4 @@
+{{
 var nombre = "Jose";
 var apellido = " Montes";
 var nombreCompleto = nombre + " " + apellido; //Concatenacion de cadenas
@@ -13,24 +14,4 @@ console.log(juntos); // 95Jose
 nombre += apellido; //Tercera Concatenacion usando el operador simplificado +=
 console.log(nombre); // JoseMontes
 
-// Hoy ya no se usa var, se utiliza let y cons
-let nombre2 = "Pedro";
-console.log(nombre);
-
-const apellido2 = "Lepes";
-//apellido2 = "perez"; //la constante no puede ser modificada
-console.log(apellido2);
-
-
-// CLASE 7 - VIDEO 1
-let x, y; // se pueden crear varias variables dentro de una misma linea
-x = 17, y = 21; // se pueden asignar valores a varias variables en la misma linea
-let z = x + y; // se asigna el valor de la operacion
-console.log(z);
-
-let _1num = 31; //No utilizar numeros para iniciar el nombre de una variable
-let rompiendo = "rompe"; // No utilizar palabras reservadas como nombre
-
-console.log(_1num);
-console.log(rompiendo);
-
+}} //Llaves para que funcione Quokka
