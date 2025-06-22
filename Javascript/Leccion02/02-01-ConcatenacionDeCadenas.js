@@ -13,6 +13,13 @@ console.log(juntos); // 95Jose
 nombre += apellido; //Tercera Concatenacion usando el operador simplificado +=
 console.log(nombre); // JoseMontes
 
+// Hoy ya no se usa var, se utiliza let y cons
+let nombre2 = "Pedro";
+console.log(nombre);
+
+const apellido2 = "Lepes";
+//apellido2 = "perez"; //la constante no puede ser modificada
+console.log(apellido2);
 
 
 // CLASE 7 - VIDEO 1

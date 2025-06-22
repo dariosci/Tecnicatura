@@ -25,3 +25,4 @@ if (dentroRango >= valMin && dentroRango <= valMax) {
   console.log("No está dentro del rango establecido");
 }
 
+//
