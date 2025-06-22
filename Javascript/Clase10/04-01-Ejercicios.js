@@ -60,4 +60,4 @@ switch (mes){
     default:
         estacion = "Valor incorrecto";
     }
-console.log("El valor corresponde a la estación: " + estacion);
+console.log("Bienvenido a la estación de: " + estacion);
