@@ -1,3 +1,4 @@
+
 public class Clase5InferenciaTiposVarYPrimitivos {
     public static void main(String[] args) {
         //Inferencia de tipos var y tipos primitivos

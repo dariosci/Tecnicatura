@@ -1,3 +1,4 @@
+
 public class Clase5TipoPrimitivoChar {
     public static void main(String[] args) {
         // Tipos primitivos Char

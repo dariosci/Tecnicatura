@@ -1,3 +1,4 @@
+
 public class Clase3ReglasParaDefinirVariables {
     public static void main(String[] args) {
         // Reglas para definir variables en Java

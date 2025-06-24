@@ -1,3 +1,4 @@
+
 public class Clase3InferenciaDeTipo {
     public static void main(String[] args) {
         //var - inferencia de tipos en Java

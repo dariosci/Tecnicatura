@@ -1,4 +1,5 @@
 
+
 public class Clase6TiposPrimitivosBooleanos {
 
     public static void main(String[] args) {

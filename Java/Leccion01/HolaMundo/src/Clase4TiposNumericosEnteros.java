@@ -1,3 +1,4 @@
+
 public class Clase4TiposNumericosEnteros {
     public static void main(String[] args) {
         byte numEnteroByte = (byte)127; // 1 byte

@@ -1,5 +1,4 @@
 
-
 public class HolaMundo2 {
 
     public static void main(String[] args) {
@@ -414,6 +413,193 @@ public class HolaMundo2 {
         System.out.println("solucionAritmetica = " + solucionAritmetica);
          */
 
+        /* ESTRUCTURA DE CONTROL IF/ELSE
+         * var condicion = true;
+        if (condicion) {
+            System.out.println("Condicion Verdadera"); //condicional simple
+        } else {
+            System.out.println("Condicion Falsa"); //condicional doble
+        }
+
+        //Ejercicio
+        var numero = 5;
+        var numeroTexto = "Número desconocido";
+        if (numero == 1) {
+            numeroTexto = "Número uno";
+        } else if (numero == 2) {
+            numeroTexto = "Número dos";
+        } else if (numero == 3) {
+            numeroTexto = "Número tres";
+        } else if (numero == 4) {
+            numeroTexto = "Número cuatro";
+        } else {
+            numeroTexto = "Número no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
+
+        //Ejercicio: Cálculo de las estaciones del año con if else
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un mes: ");
+        var mes = Integer.parseInt(entrada.nextLine());
+        String estacion = "Valor incorrecto";
+        if (mes == 12 || mes == 1 || mes == 2){
+            estacion = "Verano";
+        } else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "Otoño";
+        } else if (mes == 6 | mes == 7 || mes == 8) {
+            estacion = "Invierno";
+        } else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "Primavera";
+        } else {
+            estacion = "Valor incorrecto";
+        }
+        System.out.println("estacion = " + estacion);
+         */
+
+        /*
+         * //ESTRUCTURA DE CONTROL SWITCH
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un numero: ");
+        int numero = Integer.parseInt(entrada.nextLine());
+        var numeroTexto = "Número desconocido";
+        switch (numero) {
+            case 1:
+                numeroTexto = "Número uno";
+                break;
+            case 2:
+                numeroTexto = "Número dos";
+                break;
+            case 3:
+                numeroTexto = "Número tres";
+                break;
+            case 4:
+                numeroTexto = "Número cuatro";
+                break;
+            default:
+                numeroTexto = "Caso no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
+
+        //Ejercicio2: Estaciones del año con switch
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese un mes del año: ");
+        var mes = Integer.parseInt(entrada.nextLine());
+        var estacion = "Estación desconocida";
+        switch (mes) {
+            case 12, 1, 2:
+                estacion = "Verano";
+                break;
+            case 3, 4, 5:
+                estacion = "Otoño";
+                break;
+            case 6, 7, 8:
+                estacion = "Invierno";
+                break;
+            case 9, 10 , 11:
+                estacion = "Primavera";
+                break;
+            default: //OPCIONAL
+                estacion = "Mes incorrecto";
+        }
+        System.out.println("estacion = " + estacion);
+        
+        //Ejercicio: sistema de calificaciones con if else, como tarea hacerlo también con la sentencia de control switch
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese una Calificación entre 0 y 10: ");
+        var notaNumero = Integer.parseInt(entrada.nextLine());
+        var notaLetra = "Nota desconocida";
+
+        if(notaNumero >= 9 && notaNumero <= 10){
+            notaLetra = "A";
+        } else if (notaNumero >= 8 && notaNumero < 9){
+            notaLetra = "B";
+        }else if (notaNumero >= 7 && notaNumero < 8){
+            notaLetra = "C";
+        }else if (notaNumero >= 6 && notaNumero < 7){
+            notaLetra = "D";
+        }else if (notaNumero >= 5 && notaNumero < 6){
+            notaLetra = "E";
+        }else if (notaNumero >= 4 && notaNumero < 5){
+            notaLetra = "F";
+        }else {
+            notaLetra = "Fuera de rango";
+        }
+        System.out.println("notaLetra = " + notaLetra);
+        
+        switch (notaNumero) {
+            case 10, 9:
+                notaLetra = "A";
+                break;
+            case 8:
+                notaLetra = "B";
+                break;
+            case 7:
+                notaLetra = "C";
+                break;
+            case 6:
+                notaLetra = "D";
+                break;
+            default:
+                notaLetra = "Fuera de rango";
+        }
+        System.out.println("notaLetra = " + notaLetra);
+        */
+
+        /*
+         * Determinar si un alumno aprueba o reprueba un curso, sabiendo que
+         * aprobará si su promedio de tres calificaciones es mayor o igual a 70,
+         * Reprueba casa contrario.
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese Nota1: ");
+        var nota1 = Float.parseFloat(entrada.nextLine());
+        System.out.println("Ingrese Nota2: ");
+        var nota2 = Float.parseFloat(entrada.nextLine());
+        System.out.println("Ingrese Nota3: ");
+        var nota3 = Float.parseFloat(entrada.nextLine());
+        var promedio = (nota1 + nota2 + nota3) / 3;
+        if (promedio >= 70 ){
+            System.out.println("El alumno está aprobado con: " + promedio);
+        } else {
+            System.out.println("El alumno está desaprobado con: " + promedio);
+        }
+
+        /*
+         * En un almacén se hace un 20 MOD de descuento a los clientes cuya 
+         * compra supere los $100. ¿Cuál será la cantidad que pagará una persona
+         * por su compra?
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese la cantidad a pagar: ");
+        float compra = Float.parseFloat(entrada.nextLine());
+        double descuento = 0;
+        if (compra > 100){
+            descuento = compra * 0.2;
+        } else {
+            descuento = 0;
+        }
+        double precioFinal = compra - descuento;
+        System.out.println("El precio a pagar es: " + precioFinal);
+
+        /*
+         * Leer 2 números; si son iguales que los multiplique, si el primero
+         * es mayor que el segundo que los reste y si no que los sume.
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite un número: ");
+        var num1 = Float.parseFloat(entrada.nextLine());
+        System.out.println("Digite otro número: ");
+        var num2 = Float.parseFloat(entrada.nextLine());
+        double resultado = 0;
+        if (num1 == num2) {
+            resultado = num1 * num2;
+        } else if (num1  > num2) {
+            resultado = num1 - num2;
+        } else {
+            resultado = num1 + num2;
+        }
+        System.out.println("resultado = " + resultado);
+         */
         
     }
 }

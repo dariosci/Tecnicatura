@@ -1,3 +1,4 @@
+
 public class Clase9Ejercicio6 {
     public static void main(String[] args) {
         var guillermo = 100;

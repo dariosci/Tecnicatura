@@ -1,4 +1,4 @@
-package Clase6;
+
 import java.util.Scanner;
 
 public class Clase6TP {
