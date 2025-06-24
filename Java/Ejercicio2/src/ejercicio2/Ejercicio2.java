@@ -1,8 +1,12 @@
+package ejercicio2;
 
 import java.util.Scanner;
 
-
-public class Clase7Ejercicio2 {
+/**
+ *
+ * @author dario
+ */
+public class Ejercicio2 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         int horas;
@@ -12,8 +16,8 @@ public class Clase7Ejercicio2 {
         System.out.println("Ingrese el salario por hora:");
         tarifaHora = entrada.nextDouble();
 
-
         salario = horas * tarifaHora;
         System.out.println("El salario del empleado es: " + salario);
     }
+    
 }
