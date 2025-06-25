@@ -48,16 +48,4 @@
     }
   }
 
-  
-
-
 } //LLAVES PARA QUOKKA
-("El padre puede asistir al juego de su hijo");
-
-("Verdadero");
-
-("Es un numero PAR");
-
-("string");
-
-("number");

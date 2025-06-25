@@ -7,9 +7,9 @@ if (parImpar % 2 == 0) {
 }
 
 //Ejercicio: es mayor de edad
-let edad = 18,
+let edad2 = 18,
   adulto = 18;
-if (edad >= adulto) {
+if (edad2 >= adulto) {
   console.log("Usted es una persona adulta");
 } else {
   console.log("Usted es una persona menor de edad");
@@ -24,5 +24,3 @@ if (dentroRango >= valMin && dentroRango <= valMax) {
 } else {
   console.log("No está dentro del rango establecido");
 }
-
-//
