@@ -19,7 +19,8 @@ public class Ejercicio7 {
         comision = 150 * cantA + (((valorVenta * cantA) * 5)/100);
         salarioMes = salario + comision;
         System.out.println("El salario por mes de " + vendedor + " es: $" + salarioMes);
-        
+    }    
+} 
         //COMO SALIA RESUELTO (EL RESULTADO ES EL MISMO)
         /* 
         Scanner entrada = new Scanner(System.in);
@@ -41,5 +42,4 @@ public class Ejercicio7 {
         salarioMes = salario + comision + porcVenta;
         System.out.println("El salario por mes de " + vendedor + " es: $" + salarioMes);
         */
-    }    
-}
+    

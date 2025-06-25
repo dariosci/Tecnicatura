@@ -9,7 +9,6 @@ public class Clase7Ejercicio2 {
         System.out.println("Ingrese el salario por hora:");
         tarifaHora = entrada.nextDouble();
 
-
         salario = horas * tarifaHora;
         System.out.println("El salario del empleado es: " + salario);
     }

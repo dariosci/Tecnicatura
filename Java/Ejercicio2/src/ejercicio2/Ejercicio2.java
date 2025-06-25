@@ -1,5 +1,4 @@
 package ejercicio2;
-
 import java.util.Scanner;
 
 public class Ejercicio2 {
@@ -14,6 +13,5 @@ public class Ejercicio2 {
 
         salario = horas * tarifaHora;
         System.out.println("El salario del empleado es: " + salario);
-    }
-    
+    }    
 }

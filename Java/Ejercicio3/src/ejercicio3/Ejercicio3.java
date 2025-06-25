@@ -6,7 +6,6 @@ public class Ejercicio3 {
         //Sacar área y perímetro de un rectángulo
         Scanner entrada = new Scanner(System.in);
         System.out.println("Ingrese el alto del rectangulo: ");
-        System.out.println("Ingree el alto del rectangulo: ");
         double alto = Double.parseDouble(entrada.nextLine());
         System.out.println("Digite el ancho del rectángulo:");
         double ancho = Double.parseDouble(entrada.nextLine());
