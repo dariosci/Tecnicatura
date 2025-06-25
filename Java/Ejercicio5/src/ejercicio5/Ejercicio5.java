@@ -1,15 +1,7 @@
 package ejercicio5;
 import java.util.Scanner;
 
-/**
- *
- * @author dario
- */
 public class Ejercicio5 {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         float notaA, notaB, notaC, sumaNotas;
@@ -21,6 +13,5 @@ public class Ejercicio5 {
         notaC = Float.parseFloat(entrada.nextLine());
         sumaNotas = notaA + notaB + notaC;
         System.out.println("La suma de las notas es: " + sumaNotas);
-    }
-    
+    }    
 }

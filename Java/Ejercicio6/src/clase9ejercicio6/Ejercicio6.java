@@ -1,15 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package clase9ejercicio6;
-
 import java.util.Scanner;
 
-/**
- *
- * @author dario
- */
 public class Ejercicio6 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
@@ -25,4 +16,3 @@ public class Ejercicio6 {
         System.out.println("El dinero total que juntan entre los 3: " + total);
     }    
 }
-

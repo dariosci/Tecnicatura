@@ -1,7 +1,4 @@
-
-
 public class Clase8OperadoresIgualdadRelacionales {
-
     public static void main(String[] args) {
         //Operadores de igualdad y Relacionales
         var aNum = 5;

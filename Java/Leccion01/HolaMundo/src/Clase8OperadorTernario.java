@@ -1,4 +1,3 @@
-
 public class Clase8OperadorTernario {
     public static void main(String[] args) {
         //Operador Ternario

@@ -1,11 +1,6 @@
 package ejercicio4;
-
 import java.util.Scanner;
 
-/**
- *
- * @author dario
- */
 public class Ejercicio4 {
     public static void main(String[] args) {
         //El mayor de dos números (Operador Ternario)
@@ -16,8 +11,6 @@ public class Ejercicio4 {
         int numB = Integer.parseInt(entrada.nextLine());
 
         var esMayor = numA > numB ? "numA es mayor" : "numB es mayor";
-        System.out.println(esMayor);
-        
-    }
-    
+        System.out.println(esMayor);        
+    }    
 }

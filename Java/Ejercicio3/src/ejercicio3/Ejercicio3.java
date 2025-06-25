@@ -1,11 +1,6 @@
 package ejercicio3;
-
 import java.util.Scanner;
 
-/**
- *
- * @author dario
- */
 public class Ejercicio3 {
     public static void main(String[] args) {
         //Sacar área y perímetro de un rectángulo
@@ -20,6 +15,5 @@ public class Ejercicio3 {
         var perimetro = (alto * 2) + (ancho * 2);
         System.out.println("Área = " + area);
         System.out.println("Perímetro = " + perimetro);
-    }
-    
+    }    
 }

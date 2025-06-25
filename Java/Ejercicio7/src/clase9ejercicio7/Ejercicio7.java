@@ -1,11 +1,6 @@
 package clase9ejercicio7;
-
 import java.util.Scanner;
 
-/**
- *
- * @author dario
- */
 public class Ejercicio7 {
     public static void main(String[] args) {
         // COMO LO HICE
@@ -32,7 +27,6 @@ public class Ejercicio7 {
         int comision = 150, venta;
         float salarioMes, ventaCarro, porcVenta, totalPrecio;
         String vendedor;
-
         
         System.out.println("Ingrese el nombre el Vendedor:");
         vendedor = String.valueOf(entrada.nextLine());

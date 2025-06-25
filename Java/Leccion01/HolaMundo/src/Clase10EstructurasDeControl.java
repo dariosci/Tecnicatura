@@ -1,8 +1,6 @@
-
 import java.util.Scanner;
 
 public class Clase10EstructurasDeControl {
-
     public static void main(String[] args) {
         //ESTRUCTURA DE CONTROL IF/ELSE
         var condicion = true;
