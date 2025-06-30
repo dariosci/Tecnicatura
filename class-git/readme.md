@@ -3,7 +3,7 @@
 
 Abrimos la terminal de Git Bash en Windows o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 
-```sh
+```bash
 pwd  #Vemos la ruta de la carpeta en la que estamos
 cd #Es para navegar a una carpeta: change directory -> cambiar de directorio
 cd / #Nos llava al home, en la raíz del disco
@@ -22,7 +22,7 @@ cd /mnt/d #Cambia de directorio usando WSL Ubuntu en window
 ```
 ### AHORA COMENZAMOS CON LA CREACIÓN DE CARPETAS
 
-```sh
+```bash
 cd ..
 cd ..
 cd /mnt/c
@@ -223,18 +223,18 @@ Abrir git bash en Window o la terminal de Linux o de Mac: al abrir Git Bash hace
 
 >TAREA -> AGREGAR LOS COMENTARIOS EN LOS COMANDOS, PARA SABER QUE PASA CON CADA UNO.
 ```bash
-cd tecnicatura
-cd class-git
-ls
-touch historia.txt
-cd ..
+cd tecnicatura #Hacemos un cambio de directorio a la carpeta "tecnicatura"
+cd class-git #Hacemos un cambio de directorio a la carpeta "class-git"
+ls #limpiamos pantalla
+touch historia.txt #creamos el archivo "historia.txt"
+cd .. #Cambiamos al directorio anterior ("tecnicatura")
 code . #Agamos cambios en el archivo historia.txt
 git commit -a #Abrimos el vim para editar el commit
 esc + i  #Esto para escribir
 esc #Para poner el comando de salida del editor
 :wq!  #Comando para salir del editor
 git log #Vemos los commit hechos hasta ahora
-git show
+git show #Muestra detalles del último commit (o de uno específico si se le pasa el hash)
 git log --oneline #Copiamos el hash corto del commit seleccionado
 Copiar el hash #El número largo que tiene el commit después de un git log o el hash corto
 git reset hash-nombre-commit #Este nos permite volver a una versión anterior, hay 2 tipos de reset: el duro y el suave
@@ -252,32 +252,32 @@ git status #Ya esta todo en memoria ram, a git solo le importan los archivos, gu
 git commit -m "Commiteamos lo último de hoy"
 git log #vemos lo nuevo que hemos hecho sin lo que borramos con el reset fuerte
 hacer cambios en historia.txt #Cambiamos la última línea y
-ctrl + s 
-git diff
+ctrl + s #Guardamos el archivo
+git diff #Comparamos lo que hay en disco con lo que está en staging
 #Agregar cambios al archivo historia.txt una vez más
-git commit -am "cambio en la última línea del historia.txt"
-git log
+git commit -am "cambio en la última línea del historia.txt" #Commiteamos directamente cambios
+git log #Verificamos el commit
 q  #Esto para salir
 git log --stat #veremos los cambios especificos que hicimos en cuales archivos por medio del commit y veremos los cambios en bits
 q #salimos de la línea de commits, ahora queremos ver como era originalmente el archivo, osea la primera versión, copiamos el nombre del primer commit
 git checkout hash #Veremos el archivo en su estado original
-git status
+git status #Vemos el estado actual del repositorio
 git checkout master #Volvemos a la versión master del archivo historia.txt
 git checkout hash #Volvemos a hacer esto y cambiamos cosas del archivo
 git commit -am "Reemplazo de una versión por otra de la historia"
-git log
+git log #Verificamos el nuevo commit generado
 #Veremos un nuevo hash para el nuevo commit, se recomienda esta tecnica para quitar posibles errores no encontrados, desde aquí se debe crear una nueva rama para guardar estos cambios y continuar desde lo que si esta funcionando.
-git branch cambios
-git checkout master
+git branch cambios #Creamos nueva rama "cambios"
+git checkout master #Volvemos a la rama principal
 #Por esto es que se recomienda trabajar con ramas secundarias, con nombres alternativos, nombres practicos, release, hotfix, etc. y las ramas primarias no se deben tocar, las ramas primarias son master o main y una segunda que podemos poner de nombre second, develop, etc.
 git branch second #Creamos las ramas de trabajo
-git branch tuNombre
-git branch hotfix
+git branch tuNombre #Creamos una rama personalizada
+git branch hotfix #Creamos una rama "hotfix" para arreglos rápidos
 git branch #Vemos las ramas que tenemos
 git branch -d cambios #Borramos la rama, si no se borra utilizar
-git branch -D cambios
-cd ..
-cd ..
+git branch -D cambios #Forzamos el borrado de la rama "cambios"
+cd .. #Subimos un nivel en el directorio
+cd .. #Volvemos a la raíz del proyecto
 ```
 La tarea de hoy, agregar esta clase al README.md con el lenguaje de markdown, como lo hicimos en la clase pasada, luego deben hacer el commit correspondiente al cambio agregado.
 
@@ -310,9 +310,9 @@ Hagan esto si quieren hacer pruebas:
 cd tecnicatura #Vamos a hacer pruebas, es por esto que creamos una carpeta nueva
 cd practicas #Entramos en la carpeta
 touch reset_file.txt #Agregar información y hacer uno a dos commits
-git add reset_file.txt
-git add .
-git commit -m"Iniciando el primer commit"
+git add reset_file.txt #Agregamos el archivo específico al área de staging
+git add . #Agregamos todos los archivos modificados al staging
+git commit -m"Iniciando el primer commit" #Creamos el primer commit con un mensaje descriptivo
 #Comenzar con las pruebas de git reset
 ```
 ### ¿Cómo funciona Git Reset en tu flujo de trabajo? 
