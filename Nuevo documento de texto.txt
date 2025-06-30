@@ -1,0 +1,11 @@
+1. Introduccion --> Cecilia
+2. Menu principal --> Cecilia
+3. Seleccionar Combo --> Matias Altamiranda
+4. Personalizar pedido --> Lucas Aguilar
+5. SeleccionarHamburguesa (Linea  ) y Seleccionar Sandwich (Linea )  (Grabar por separado)-->  Dario Scilipoti
+6. PersonzalizarPizza --> Sosa Jairo 
+7. AderezosYEnsaladas y Acompañamiento (Grabar por separado) --> Juan Moreno
+8. SeleccionarBebida y Ticket de combos (Grabar por separado) --> Valeria Pinaya
+9. TicketHamburguesaYSandwich --> Zelada Orlando	
+10. Ticket de Pizza --> Valentin Bertolone
+11. Compilar codigo y despedida--> Cecilia

@@ -17,6 +17,5 @@ public class CondicionalEjercicio_1 {
             estacion = "Primavera";
         }
         System.out.println("estacion = " + estacion);
-    }
-    
+    }    
 }

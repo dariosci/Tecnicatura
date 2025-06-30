@@ -33,4 +33,3 @@ if cantidad_impares == 0: # si no hay impares, mostramos mensaje de eso tambien
     print("No se ingresaron números impares.")
 else:
     print(f"El promedio de números impares: {promedio_impares:.2f}") # el :.2f es para mostrar el promedio con 2 decimales
-    

@@ -14,6 +14,7 @@ for i in range(10):
         numeros_negativos += 1
     else:
         numeros_neutros += 1
+        
 print(f"Números positivos: {numeros_positivos}")
 print(f"Números negativos: {numeros_negativos}")
 print(f"Números neutros: {numeros_neutros}")
