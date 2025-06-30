@@ -6,7 +6,7 @@ Aqui esta el comienzo de como trabajar con las cohortes que recien comienzan:</b
 
 Lo que vimos en la clase anterior:
 
-Abrimos la terminal de Git Bash en Window o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
+Abrimos la terminal de Git Bash en Windows o la terminal de Ubuntu, tambien la terminal de Mac, y comenzamos con los siguientes comandos y creación de directorios
 ```bash
 pwd  #Vemos la ruta de la carpeta en la que estamos
 cd #Es para navegar a una carpeta: change directory -> cambiar de directorio
