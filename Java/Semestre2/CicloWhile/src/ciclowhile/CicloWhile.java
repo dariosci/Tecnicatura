@@ -8,7 +8,7 @@ public class CicloWhile {
             conteo++; //vamos aumentando en uno la variable
         }
         System.out.println("------------");
-        
+
         //CICLO DO-WHILE
         var contador = 0;
         do { 
@@ -17,10 +17,27 @@ public class CicloWhile {
         } while (contador <= 7);
         System.out.println("------------");
 
-        //CICLO FOR
+        // Uso de las palabras break y continue junto con Labels (Etiquetas)
+        //inicio:
+        // CICLO FOR - Tambien la palabra Brake
         for (var contando = 0; contando < 7; contando++) {
-            System.out.println("contando = " + contando);
+            if (contando % 2 == 0) {
+                System.out.println("contando = " + contando);
+                break; //sale del ciclo
+                //break inicio;
+            }            
         }
-    }
-    
+        System.out.println("------------");
+        
+        // CICLO FOR - Tambien la palabra Continue
+        //inicio:
+        for (var contando = 0; contando < 7; contando++) {
+            if (contando % 2 != 0) {                
+                continue;  //vamos a la siguiente iteracion
+                //continue inicio;
+            }
+            System.out.println("contando = " + contando);            
+        }
+
+    }    
 }
