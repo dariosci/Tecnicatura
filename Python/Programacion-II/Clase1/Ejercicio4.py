@@ -12,6 +12,8 @@ for i in range(len(tupla)): # Asignamos el rango por la longitud de la tupla e i
 print(lista) # Imprimimos la nueva lista con los numeros menores a 5
 
 lista.clear() # Limpio la lista para el algoritmo del profe
+print("-----------")
+print("ASI EL PROFE ARIEL:")
 # ASI EL PROFE ARIEL
 for elemento in tupla:
     if elemento < 5: # comparamos el valor de cada posicion de la tupla para ver si es menor a 5
