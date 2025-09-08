@@ -3,9 +3,9 @@
  * negativo. El proceso se repetirá hasta que se introduzca un cero
  */
 
- import javax.swing.JOptionPane;
+import javax.swing.JOptionPane;
 
-public class Ejercicio2JOptionPane {
+public class C2Ejercicio2JOptionPane {
     public static void main(String[] args) {
         int num;
         do {

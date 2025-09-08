@@ -1,6 +1,11 @@
+/*
+ * Ejercicio 2: Leer un número e indicar si es positivo o
+ * negativo. El proceso se repetirá hasta que se introduzca un cero
+ */
+
 import java.util.Scanner;
 
-public class Ejercicio2Scanner {
+public class C2Ejercicio2Scanner {
       public static void main(String[] args) {
         int num;
         Scanner entrada = new Scanner(System.in);

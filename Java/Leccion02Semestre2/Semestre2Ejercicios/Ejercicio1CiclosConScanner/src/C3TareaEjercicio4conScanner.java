@@ -4,16 +4,18 @@
  * Lo hacemos primero con la clase Scanner
  * Luego lo hacemos con la clase JOptionPane
  */
-import javax.swing.JOptionPane;
+import java.util.Scanner;
 
-public class Clase3TareaEjercicio2conJOptionPane {
+public class C3TareaEjercicio4conScanner {
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
         int num, contador;
         contador = 0;
         System.out.println("Ingrese números, para terminar digite un número negativo");
         System.out.println("----------------------------------------------------------");
         do { // Usamos el do-while para que al menos se ejecute una vez el ciclo            
-            num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número: ")); // Pedimos al usuario que ingrese un número usando la clase JOptionPane
+            System.out.println("Ingrese un número: "); // pedimos al usuario un número
+            num = Integer.parseInt(entrada.nextLine()); // capturamos el numero con la clase scanner
             if (num >= 0) { // Comparamos si el numero es mayor o igual a cero
                 contador += 1;
             } else { // Si es Negativo, termina el programa

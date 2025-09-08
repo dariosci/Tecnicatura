@@ -3,15 +3,15 @@
  * el proceso hasta que se introduzca un número negativo
  */
 
-package ejercicio1ciclossinscanner;
+import java.util.Scanner;
 
-import javax.swing.JOptionPane;
-
-public class Ejercicio1CiclosSinScanner {    
+public class C2Ejercicio1CiclosConScanner {
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
         int resultado, num;
         do { // Usamos el do-while para que al menos se ejecute una vez el ciclo
-            num = Integer.parseInt(JOptionPane.showInputDialog("Ingrese un número: ")); // pedimos al usuario un número usando la clase JOptionPane
+            System.out.println("Ingrese un número: "); // pedimos al usuario un número
+            num = Integer.parseInt(entrada.nextLine()); // capturamos el numero con la clase scanner
             if (num >= 0) { // Comparamos si el numero es mayor o igual a cero
                 resultado = (int)Math.pow(num, 2); // sacamos el cuadrado del numero
                 System.out.println("El número " + num + " elevado al cuadrado es: " + resultado); //mostramos el resultado
