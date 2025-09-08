@@ -24,10 +24,10 @@ public class C3TareaEjercicio5ConJOptionPane {
                 System.out.println("Felicitaciones!!! Adivinaste el número secreto en: " + intentos + " intentos");                
                 break;
             } else if (num < numAleatorio) {
-                intentos++;
+                intentos += 1;
                 System.out.println("El número secreto es MAYOR");
             } else {
-                intentos++;
+                intentos += 1;
                 System.out.println("El número secreto es MENOR");
             }
         } while (num != numAleatorio);

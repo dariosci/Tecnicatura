@@ -5,7 +5,7 @@
 
 import javax.swing.JOptionPane;
 
-public class C4TareaEjercicio1conJOptionPane {
+public class C4TareaEjercicio6conJOptionPane {
     public static void main(String[] args) {
         int num, suma;
         suma = 0;

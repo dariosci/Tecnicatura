@@ -21,11 +21,11 @@ public class C3TareaEjercicio5ConScanner {
             System.out.println("Ingrese un número: "); // pedimos al usuario un número
             num = Integer.parseInt(entrada.nextLine()); // capturamos el numero con la clase scanner
             if (num == numAleatorio) { // Si hubo acierto termina el programa
-                intentos++;
+                intentos += 1;
                 System.out.println("Felicitaciones!!! Adivinaste el número secreto en: " + intentos + " intentos");                
                 break;
             } else if (num < numAleatorio) {
-                intentos++;
+                intentos += 1;
                 System.out.println("El número secreto es MAYOR");
             } else {
                 intentos++;
