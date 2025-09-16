@@ -5,7 +5,7 @@
 def sumar(*valores):
     suma = 0
     for valor in valores:
-        suma = suma + valor
-    print(suma)
+        suma += valor
+    return suma
 
-sumar(1, 3, 4, 10, 15)
+print(sumar(3, 5, 9, 2, 1))
