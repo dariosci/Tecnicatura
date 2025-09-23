@@ -3,7 +3,7 @@ class Persona: # Creamos una clase
         self.nombre = nombre
         self.apellido = apellido
         self.edad = edad
-    def mostrar_detalle(self):
+    def mostrar_detalle(self): # self es igual a this (en JS)
         print(f'Persona: {self.nombre} {self.apellido} {self.edad}')
 # 8.3 Creacion de objetos con argumentos
 persona1 = Persona('Ariel', 'Betancud', 49) # Necesitamos enviar argumentos
@@ -29,3 +29,5 @@ print(f'El objeto1 modificado de la clase persona: {persona1.nombre} {persona1.a
 
 persona1.mostrar_detalle()
 persona2.mostrar_detalle()
+
+
