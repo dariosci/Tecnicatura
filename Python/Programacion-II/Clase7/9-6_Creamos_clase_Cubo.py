@@ -10,11 +10,12 @@ class Cubo:
         self.altura = altura
         self.profundidad = profundidad
     def calcular_volumen(self):
-        print(f"El volumen del Cubo es: {self.ancho * self.altura * self.profundidad}")
+        return self.ancho * self.altura * self.profundidad
         
 cubo = Cubo(altura=0, ancho=0, profundidad=0)
 print("Ingrese las siguientes medidas del Cubo para calcular el volumen:")
 cubo.ancho = float(input("Ancho: "))
 cubo.altura = float(input("Altura: "))
 cubo.profundidad = float(input("Profundidad: "))
-cubo.calcular_volumen()
+#cubo.calcular_volumen()
+print(f"El volumen del Cubo es: {cubo.calcular_volumen()}")

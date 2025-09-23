@@ -9,22 +9,17 @@ class Rectangulo:
         self.altura = altura
         self.base = base
     def calcular_area(self):
-        print(f"El Área del Rectangulo es: {self.base * self.altura}")
-print("Ingrese altura y base para calcular el Rectangulo 1")
-rectangulo1 = Rectangulo(altura=0, base=0)
-rectangulo1.altura = float(input("Altura: "))
-rectangulo1.base = float(input("Base: "))
-rectangulo1.calcular_area()
-print("----------------------------------------------------")
-print("Ingrese altura y base para calcular el Rectangulo 2")
-rectangulo2 = Rectangulo(altura=0, base=0)
-rectangulo2.altura = float(input("Altura: "))
-rectangulo2.base = float(input("Base: "))
-rectangulo2.calcular_area()
-print("----------------------------------------------------")
-print("Ingrese altura y base para calcular el Rectangulo 3")
-rectangulo3 = Rectangulo(altura=0, base=0)
-rectangulo3.altura = float(input("Altura: "))
-rectangulo3.base = float(input("Base: "))
-rectangulo3.calcular_area()
-print("----------------------------------------------------")
+        return self.base * self.altura
+
+rectangulos = []
+
+for i in range(3):
+    print(f"\nRectángulo {i+1}:")
+    base = float(input("Ingrese la base: "))
+    altura = float(input("Ingrese la altura: "))
+    rect = Rectangulo(base, altura)
+    rectangulos.append(rect)
+
+# Mostrar las áreas
+for i, rect in enumerate(rectangulos, start=1):
+    print(f"El área del rectángulo {i} es: {rect.calcular_area()}")
