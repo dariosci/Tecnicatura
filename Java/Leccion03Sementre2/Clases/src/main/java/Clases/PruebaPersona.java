@@ -1,4 +1,4 @@
-package com.mycompany.clases;
+package Clases;
 
 public class PruebaPersona {
     public static void main(String[] args) {
