@@ -23,6 +23,10 @@ class Persona: #Clase Padre
         print('Estamos utilizando el método set')
         self._edad = edad
 
+    #11.5 Método dunder __str__()
+    def __str__(self): # Override = sobreescribir
+        return f'Persona: [Nombre: {self._nombre}, Edad: {self._edad}]'
+
 class Empleado(Persona): #Clase Hija
     def __init__(self, nombre, edad, sueldo):
         super().__init__(nombre, edad)
@@ -40,6 +44,10 @@ class Empleado(Persona): #Clase Hija
     def sueldo(self, sueldo): # Método Setter
         print('Estamos utilizando el método set')
         self._sueldo = sueldo
+    
+    #11.5 Método dunder __str__()
+    def __str__(self):
+        return f'Empleado: [Sueldo: {self._sueldo}] {super().__str__()}'
 
 empleado1 = Empleado('Dario', 42, 95000)
 print(empleado1)
