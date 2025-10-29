@@ -1,7 +1,6 @@
 from Cuadrado import Cuadrado
 from Rectangulo import Rectangulo
 
-
 cuadrado1 = Cuadrado(5, 'Azul')
 print(f'Alto: {cuadrado1.alto}')
 print(f'Ancho: {cuadrado1.ancho}')
